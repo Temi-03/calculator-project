@@ -5,14 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <link rel="stylesheet" href="calculator.css">
-    <link rel="script" href="calculator.js">
+    <script src="calculator.js" defer></script> 
 
 </head>
 <body>
     <h1>Calculator</h1>
     <form class="calculator">
         <div class="inside">
-            <div class="top-box"></div>
+            <div class="top-box" id="top-box"></div>
+            <div class="row">
+                <div class="buttons"  onclick="clearIt()" >AC</div>
+                <div class=" buttons" onclick="aprendToDisplay('+')">+/-</div>
+                <div class="buttons" onclick="aprendToDisplay('%')">%</div>
+                <div class="buttons" onclick="aprendToDisplay('+')">+</div>
+            </div>
+            <div class="row">
+                <div class="one buttons" onclick="aprendToDisplay('7')">7</div>
+                <div class="two buttons" onclick="aprendToDisplay('8')">8</div>
+                <div class="three buttons" onclick="aprendToDisplay('9')">9</div>
+                <div class="plus buttons" onclick="aprendToDisplay('-')">-</div>
+            </div>
+            <div class="row">
+                <div class="one buttons" onclick="aprendToDisplay('4')">4</div>
+                <div class="two buttons" onclick="aprendToDisplay('5')">5</div>
+                <div class="three buttons" onclick="aprendToDisplay('6')">6</div>
+                <div class="plus buttons" onclick="aprendToDisplay('/')">/</div>
+            </div>
+            <div class="row">
+                <div class="one buttons" onclick="aprendToDisplay('1')">1</div>
+                <div class="two buttons" onclick="aprendToDisplay('2')">2</div>
+                <div class="three buttons" onclick="aprendToDisplay('3')">3</div>
+                <div class="plus buttons" onclick="aprendToDisplay('*')">*</div>
+            </div>
+            <div class="row">
+                <div class="one buttons" onclick="aprendToDisplay('0')">0</div>
+                <div class="two buttons" onclick="aprendToDisplay('.')">.</div>
+                <div class=" buttons equal" onclick="calc()">=</div>
+                
+            </div>
         </div>
     </form>
     
