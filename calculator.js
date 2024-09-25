@@ -11,3 +11,4 @@ function clearIt()
 function calc(){
     num.innerHTML = eval( num.innerHTML);
 }
+decimal
